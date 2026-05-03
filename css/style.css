@@ -271,6 +271,27 @@ nav {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
+/* Certifications Grid */
+.cert-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.cert-card {
+    background-color: var(--bg-card);
+    border-radius: 12px;
+    padding: 1.5rem;
+    border: 1px solid var(--border-color);
+    transition: var(--transition-smooth);
+}
+
+.cert-card:hover {
+    transform: translateY(-3px);
+    border-color: var(--accent-primary);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
 .project-image {
     height: 200px;
     background-color: #f0f0f0;
@@ -369,10 +390,24 @@ nav {
 
 .timeline-content {
     background-color: var(--bg-card);
-    padding: 2rem;
-    border-radius: 16px;
+    padding: 1.5rem;
+    border-radius: 12px;
     border: 1px solid var(--border-color);
     transition: var(--transition-smooth);
+}
+
+.timeline-item.stgenbio::before {
+    background-color: #3b82f6;
+}
+.timeline-item.stgenbio .timeline-content {
+    border-left: 4px solid #3b82f6;
+}
+
+.timeline-item.boryung::before {
+    background-color: #10b981;
+}
+.timeline-item.boryung .timeline-content {
+    border-left: 4px solid #10b981;
 }
 
 .timeline-content:hover {
