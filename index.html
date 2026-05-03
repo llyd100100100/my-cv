@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome | Creative Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">WELCOME.</a>
+                <ul class="nav-links">
+                    <li><a href="#home">홈</a></li>
+                    <li><a href="#work">프로젝트</a></li>
+                    <li><a href="#about">소개</a></li>
+                    <li><a href="#contact">연락처</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container hero-content fade-in">
+                <h1>
+                    위험을 선제적으로 통제하는<br>
+                    <span>Global DI 전문가</span>,
+                    <span class="highlight-name">
+                        영웅
+                        <small class="name-subtitle">HERO</small>
+                    </span>입니다.
+                </h1>
+                <p class="hero-description-en">
+                    Proactive <span>Global Compliance & Data Governance Expert</span>, <span
+                        class="highlight-name-small">Hero.</span>
+                </p>
+
+                <p class="hero-description">
+                    <span id="experience-ko"></span>의 바이오/제약 품질 관리 경력(QC)과 DI 거버넌스 역량을 결합하여,
+                    글로벌 실사에 완벽히 대응하고 재난 대응 체계(BCP)를 확립합니다.
+                </p>
+                <p class="hero-description-en">
+                    Combining <span id="experience-en"></span> of QC experience
+                    with DI governance expertise to ensure global inspection readiness and establish robust Business Continuity Plans (BCP).
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#work" class="btn btn-primary">프로젝트 보기</a>
+                    <a href="#contact" class="btn btn-outline">연락하기</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio & Career Section -->
+        <section id="work" class="section">
+            <div class="container">
+                <h2 class="section-title fade-in">Projects & Career</h2>
+                <div class="tabs fade-in">
+                    <button class="tab-btn active" data-tab="projects">진행 프로젝트</button>
+                    <button class="tab-btn" data-tab="career">경력 기술서</button>
+                </div>
+
+                <div id="projects" class="tab-content active">
+                    <div class="portfolio-grid">
+                        <!-- Project 1 -->
+                        <article class="project-card fade-in">
+                            <div class="project-image">
+                                <div class="img-placeholder"
+                                    style="background: linear-gradient(45deg, #3b82f6, #1d4ed8);">
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3>LIMS Lite (실험실 정보 관리)</h3>
+                                <p>시료 추적, 시험 결과 관리, 성적서 발행을 자동화하여 QC 업무 효율을 극대화하는 웹
+                                    애플리케이션입니다.</p>
+                                <div class="project-tags">
+                                    <span class="tag">React</span>
+                                    <span class="tag">Node.js</span>
+                                    <span class="tag">PostgreSQL</span>
+                                </div>
+                            </div>
+                        </article>
+                        <!-- Project 2 -->
+                        <article class="project-card fade-in">
+                            <div class="project-image">
+                                <div class="img-placeholder"
+                                    style="background: linear-gradient(45deg, #10b981, #059669);">
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3>GMP 데이터 무결성 대시보드</h3>
+                                <p>Audit Trail 로그를 실시간으로 시각화하고 ALCOA+ 원칙 위반 의심 사례를 탐지하는 모니터링
+                                    시스템입니다.</p>
+                                <div class="project-tags">
+                                    <span class="tag">Vue.js</span>
+                                    <span class="tag">D3.js</span>
+                                    <span class="tag">Python</span>
+                                </div>
+                            </div>
+                        </article>
+                        <!-- Project 3 -->
+                        <article class="project-card fade-in">
+                            <div class="project-image">
+                                <div class="img-placeholder"
+                                    style="background: linear-gradient(45deg, #f59e0b, #d97706);">
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3>시약/자재 재고 관리 시스템</h3>
+                                <p>QR코드를 활용하여 시약의 입출고, 유효기간, 재고 현황을 모바일로 손쉽게 관리하는 솔루션입니다.
+                                </p>
+                                <div class="project-tags">
+                                    <span class="tag">Flutter</span>
+                                    <span class="tag">Firebase</span>
+                                    <span class="tag">IoT</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <div id="career" class="tab-content">
+                    <div class="timeline">
+                        <div class="timeline-item fade-in">
+                            <div class="timeline-date">2023.01 ~ 현재</div>
+                            <div class="timeline-content">
+                                <h3>에스티젠바이오(주) - 품질보증(QA)</h3>
+                                <p class="role">DI팀 주임 / 팀원</p>
+                                
+                                <div class="career-detail">
+                                    <h4 style="margin-top:15px; margin-bottom:5px; font-size:1rem; color:var(--text-primary);">1. Data Integrity 거버넌스 수립 및 글로벌 실사 완벽 대응</h4>
+                                    <ul style="margin-top:0;">
+                                        <li><strong>선제적 DI 탐지 체계 구축:</strong> 문제 발생 후 CAPA 조치 관행을 탈피, 'DI Focused Walkthrough' 체계를 절차화하여 분기/반기별 현장 자율점검 수행</li>
+                                        <li><strong>글로벌 가이드라인 Gap 분석:</strong> FDA/EMA 데이터 무결성 최신 가이드라인과 내부 SOP 간의 갭 분석(Gap Analysis) 보고서 작성 및 규정 반영</li>
+                                        <li><strong>Data Governance 교육 및 확산:</strong> 'DI 문화 확산 캠페인' 기획 및 전파 교육을 통해 투명한 데이터 관리 문화 정착</li>
+                                    </ul>
+
+                                    <h4 style="margin-top:15px; margin-bottom:5px; font-size:1rem; color:var(--text-primary);">2. BCP(재난 대응 체계) 수립을 통한 시스템 안정성 확보</h4>
+                                    <ul style="margin-top:0;">
+                                        <li><strong>제조 핵심 설비 BCP 구축:</strong> 단일 시스템 장애 시 생산 지연 리스크가 큰 Autoclave, VHP 장비 백업 체계 마련 및 '복원 체크리스트' 제정</li>
+                                        <li><strong>구형 시스템 DI Risk 개선:</strong> 노후화된 현장 설비(Air particle counter 등)의 DI 취약점 식별, 시정 조치 및 장기 개선 플랜(Master Plan) 수립</li>
+                                    </ul>
+
+                                    <h4 style="margin-top:15px; margin-bottom:5px; font-size:1rem; color:var(--text-primary);">3. 컴퓨터화 시스템 밸리데이션(CSV) 및 품질 고도화</h4>
+                                    <ul style="margin-top:0;">
+                                        <li><strong>시스템 및 Spreadsheet CSV:</strong> 현장 시스템 5건, 스프레드시트 3건의 신규/변경 CSV(URS, DQ, IQ, OQ 검토) 수행</li>
+                                        <li><strong>주기적 Audit Trail Review 모니터링:</strong> 긴급 출하 및 일상 운영에 대한 Audit Trail Review 98건 기한 내 완료</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-item fade-in">
+                            <div class="timeline-date">2020.10 ~ 2022.05</div>
+                            <div class="timeline-content">
+                                <h3>보령제약 - 품질관리(QC)</h3>
+                                <p class="role">사원 / 팀원</p>
+                                <ul>
+                                    <li><strong>분석 시험 및 기기 관리:</strong> HPLC/GC 등 정밀 기기 활용 이화학 시험 수행. Mastersizer3000 등 신규 도입 장비 적격성평가(OQ, PQ) 및 시험방법 밸리데이션 진행</li>
+                                    <li><strong>DI 기반 규정(SOP) 개정:</strong> pH meter의 Data Integrity 보완을 위한 백업 프로세스 명시화 등 시스템적 한계를 보완하는 SOP 제개정 주도</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="timeline-item fade-in">
+                            <div class="timeline-date">2020.09 ~ 2020.10</div>
+                            <div class="timeline-content">
+                                <h3>인하대학교 산학협력단</h3>
+                                <p class="role">기업지원단 사원</p>
+                                <ul>
+                                    <li>기업과 대학 내 실험실 연구 분야 연결 및 업무 소통 진행</li>
+                                    <li>예비 창업 기업인 지원 및 장비/데이터 공유 협업 진행</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title fade-in">About Me</h2>
+                <div class="about-content fade-in" style="text-align: center; max-width: 800px; margin: 0 auto;">
+                    <p style="font-size: 1.1rem; color: var(--text-secondary); margin-bottom: 2rem; line-height: 1.8;">
+                        <strong>"위험을 선제적으로 통제하는 Global Compliance & Data Governance 전문가"</strong><br><br>
+                        데이터 무결성(Data Integrity)과 품질 위험 관리(QRM)에 대한 전문성을 바탕으로, FDA/EMA 수준의 글로벌 실사에 완벽히 대응할 수 있는 품질 시스템을 설계합니다. 과거 QC 실무 경험을 통해 데이터의 생성부터 시스템 기록까지 전 과정을 아우르는 <strong>Hybrid Expertise</strong>를 갖추었으며, 노후화 설비의 재난 대응 체계(BCP) 구축을 이끌며 무중단 생산 환경을 보장합니다.<br>
+                        단순한 사후 대처가 아닌, 위험을 예측하고 통제하는 철학으로 신뢰할 수 있는 품질 관리 생태계를 만들어 갑니다.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <div class="contact-wrapper fade-in">
+                    <div class="contact-info">
+                        <p class="contact-desc">새로운 프로젝트나 협업 제안은 언제나 환영합니다.<br>이메일로 연락주시면
+                            빠르게 회신 드리겠습니다.</p>
+
+                        <a href="mailto:hello@example.com" class="contact-email">
+                            llyd100100100@gamil.com
+                        </a>
+
+                        <div class="social-icons">
+                            <a href="https://www.instagram.com/?hl=ko" target="_blank" aria-label="Instagram">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5">
+                                    </rect>
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z">
+                                    </path>
+                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                </svg>
+                            </a>
+                            <a href="https://github.com/llyd100100100/whitehero" target="_blank" aria-label="GitHub">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                    </path>
+                                </svg>
+                            </a>
+                            <a href="https://blog.naver.com/hero_white" target="_blank" aria-label="Naver Blog">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M3 3h18v18H3z" />
+                                    <path d="M15 8l-4.5 6H9V8H7v8h2l4.5-6H15v6h2V8z" />
+                                </svg>
+                            </a>
+                            <a href="https://www.linkedin.com/in/yeongung-baek-15b69b392/" target="_blank"
+                                aria-label="LinkedIn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path
+                                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                    </path>
+                                    <rect x="2" y="9" width="4" height="12"></rect>
+                                    <circle cx="4" cy="4" r="2"></circle>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-image">
+                        <img src="images/profile.jpg" alt="Profile Picture">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
