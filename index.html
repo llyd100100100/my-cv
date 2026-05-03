@@ -64,11 +64,68 @@
             <div class="container">
                 <h2 class="section-title fade-in">Projects & Career</h2>
                 <div class="tabs fade-in">
-                    <button class="tab-btn active" data-tab="projects">진행 프로젝트</button>
-                    <button class="tab-btn" data-tab="career">경력 기술서</button>
+                    <a href="#career" class="tab-btn">경력</a>
+                    <a href="#projects" class="tab-btn">진행 프로젝트</a>
                 </div>
 
-                <div id="projects" class="tab-content active">
+                <div id="career" style="padding-top: 4rem;">
+                    <h3 style="text-align: center; margin-bottom: 2rem; font-size: 1.8rem; color: var(--accent-primary);">경력 상세</h3>
+                    <div class="timeline">
+                        <div class="timeline-item fade-in">
+                            <div class="timeline-date">2023.01 ~ 현재</div>
+                            <div class="timeline-content">
+                                <h3>에스티젠바이오(주) - 품질보증(QA)</h3>
+                                <p class="role">DI팀 주임 / 팀원</p>
+                                
+                                <div class="career-detail">
+                                    <h4 style="margin-top:15px; margin-bottom:5px; font-size:1rem; color:var(--text-primary);">1. Data Integrity 거버넌스 수립 및 글로벌 실사 완벽 대응</h4>
+                                    <ul style="margin-top:0;">
+                                        <li><strong>선제적 DI 탐지 체계 구축:</strong> 문제 발생 후 CAPA 조치 관행을 탈피, 'DI Focused Walkthrough' 체계를 절차화하여 분기/반기별 현장 자율점검 수행</li>
+                                        <li><strong>글로벌 가이드라인 Gap 분석:</strong> FDA/EMA 데이터 무결성 최신 가이드라인과 내부 SOP 간의 갭 분석(Gap Analysis) 보고서 작성 및 규정 반영</li>
+                                        <li><strong>Data Governance 교육 및 확산:</strong> 'DI 문화 확산 캠페인' 기획 및 전파 교육을 통해 투명한 데이터 관리 문화 정착</li>
+                                    </ul>
+
+                                    <h4 style="margin-top:15px; margin-bottom:5px; font-size:1rem; color:var(--text-primary);">2. BCP(재난 대응 체계) 수립을 통한 시스템 안정성 확보</h4>
+                                    <ul style="margin-top:0;">
+                                        <li><strong>제조 핵심 설비 BCP 구축:</strong> 단일 시스템 장애 시 생산 지연 리스크가 큰 Autoclave, VHP 장비 백업 체계 마련 및 '복원 체크리스트' 제정</li>
+                                        <li><strong>구형 시스템 DI Risk 개선:</strong> 노후화된 현장 설비(Air particle counter 등)의 DI 취약점 식별, 시정 조치 및 장기 개선 플랜(Master Plan) 수립</li>
+                                    </ul>
+
+                                    <h4 style="margin-top:15px; margin-bottom:5px; font-size:1rem; color:var(--text-primary);">3. 컴퓨터화 시스템 밸리데이션(CSV) 및 품질 고도화</h4>
+                                    <ul style="margin-top:0;">
+                                        <li><strong>시스템 및 Spreadsheet CSV:</strong> 현장 시스템 5건, 스프레드시트 3건의 신규/변경 CSV(URS, DQ, IQ, OQ 검토) 수행</li>
+                                        <li><strong>주기적 Audit Trail Review 모니터링:</strong> 긴급 출하 및 일상 운영에 대한 Audit Trail Review 98건 기한 내 완료</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-item fade-in">
+                            <div class="timeline-date">2020.10 ~ 2022.05</div>
+                            <div class="timeline-content">
+                                <h3>보령제약 - 품질관리(QC)</h3>
+                                <p class="role">사원 / 팀원</p>
+                                <ul>
+                                    <li><strong>분석 시험 및 기기 관리:</strong> HPLC/GC 등 정밀 기기 활용 이화학 시험 수행. Mastersizer3000 등 신규 도입 장비 적격성평가(OQ, PQ) 및 시험방법 밸리데이션 진행</li>
+                                    <li><strong>DI 기반 규정(SOP) 개정:</strong> pH meter의 Data Integrity 보완을 위한 백업 프로세스 명시화 등 시스템적 한계를 보완하는 SOP 제개정 주도</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="timeline-item fade-in">
+                            <div class="timeline-date">2020.09 ~ 2020.10</div>
+                            <div class="timeline-content">
+                                <h3>인하대학교 산학협력단</h3>
+                                <p class="role">기업지원단 사원</p>
+                                <ul>
+                                    <li>기업과 대학 내 실험실 연구 분야 연결 및 업무 소통 진행</li>
+                                    <li>예비 창업 기업인 지원 및 장비/데이터 공유 협업 진행</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="projects" style="padding-top: 4rem;">
+                    <h3 style="text-align: center; margin-bottom: 2rem; font-size: 1.8rem; color: var(--accent-primary);">진행 프로젝트</h3>
                     <div class="portfolio-grid">
                         <!-- Project 1 -->
                         <article class="project-card fade-in">
@@ -124,61 +181,6 @@
                                 </div>
                             </div>
                         </article>
-                    </div>
-                </div>
-
-                <div id="career" class="tab-content">
-                    <div class="timeline">
-                        <div class="timeline-item fade-in">
-                            <div class="timeline-date">2023.01 ~ 현재</div>
-                            <div class="timeline-content">
-                                <h3>에스티젠바이오(주) - 품질보증(QA)</h3>
-                                <p class="role">DI팀 주임 / 팀원</p>
-                                
-                                <div class="career-detail">
-                                    <h4 style="margin-top:15px; margin-bottom:5px; font-size:1rem; color:var(--text-primary);">1. Data Integrity 거버넌스 수립 및 글로벌 실사 완벽 대응</h4>
-                                    <ul style="margin-top:0;">
-                                        <li><strong>선제적 DI 탐지 체계 구축:</strong> 문제 발생 후 CAPA 조치 관행을 탈피, 'DI Focused Walkthrough' 체계를 절차화하여 분기/반기별 현장 자율점검 수행</li>
-                                        <li><strong>글로벌 가이드라인 Gap 분석:</strong> FDA/EMA 데이터 무결성 최신 가이드라인과 내부 SOP 간의 갭 분석(Gap Analysis) 보고서 작성 및 규정 반영</li>
-                                        <li><strong>Data Governance 교육 및 확산:</strong> 'DI 문화 확산 캠페인' 기획 및 전파 교육을 통해 투명한 데이터 관리 문화 정착</li>
-                                    </ul>
-
-                                    <h4 style="margin-top:15px; margin-bottom:5px; font-size:1rem; color:var(--text-primary);">2. BCP(재난 대응 체계) 수립을 통한 시스템 안정성 확보</h4>
-                                    <ul style="margin-top:0;">
-                                        <li><strong>제조 핵심 설비 BCP 구축:</strong> 단일 시스템 장애 시 생산 지연 리스크가 큰 Autoclave, VHP 장비 백업 체계 마련 및 '복원 체크리스트' 제정</li>
-                                        <li><strong>구형 시스템 DI Risk 개선:</strong> 노후화된 현장 설비(Air particle counter 등)의 DI 취약점 식별, 시정 조치 및 장기 개선 플랜(Master Plan) 수립</li>
-                                    </ul>
-
-                                    <h4 style="margin-top:15px; margin-bottom:5px; font-size:1rem; color:var(--text-primary);">3. 컴퓨터화 시스템 밸리데이션(CSV) 및 품질 고도화</h4>
-                                    <ul style="margin-top:0;">
-                                        <li><strong>시스템 및 Spreadsheet CSV:</strong> 현장 시스템 5건, 스프레드시트 3건의 신규/변경 CSV(URS, DQ, IQ, OQ 검토) 수행</li>
-                                        <li><strong>주기적 Audit Trail Review 모니터링:</strong> 긴급 출하 및 일상 운영에 대한 Audit Trail Review 98건 기한 내 완료</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="timeline-item fade-in">
-                            <div class="timeline-date">2020.10 ~ 2022.05</div>
-                            <div class="timeline-content">
-                                <h3>보령제약 - 품질관리(QC)</h3>
-                                <p class="role">사원 / 팀원</p>
-                                <ul>
-                                    <li><strong>분석 시험 및 기기 관리:</strong> HPLC/GC 등 정밀 기기 활용 이화학 시험 수행. Mastersizer3000 등 신규 도입 장비 적격성평가(OQ, PQ) 및 시험방법 밸리데이션 진행</li>
-                                    <li><strong>DI 기반 규정(SOP) 개정:</strong> pH meter의 Data Integrity 보완을 위한 백업 프로세스 명시화 등 시스템적 한계를 보완하는 SOP 제개정 주도</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="timeline-item fade-in">
-                            <div class="timeline-date">2020.09 ~ 2020.10</div>
-                            <div class="timeline-content">
-                                <h3>인하대학교 산학협력단</h3>
-                                <p class="role">기업지원단 사원</p>
-                                <ul>
-                                    <li>기업과 대학 내 실험실 연구 분야 연결 및 업무 소통 진행</li>
-                                    <li>예비 창업 기업인 지원 및 장비/데이터 공유 협업 진행</li>
-                                </ul>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>

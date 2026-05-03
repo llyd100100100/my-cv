@@ -19,34 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const fadeElements = document.querySelectorAll('.fade-in');
     fadeElements.forEach(el => observer.observe(el));
 
-    // 2. Tab Navigation
-    const tabBtns = document.querySelectorAll('.tab-btn');
-    const tabContents = document.querySelectorAll('.tab-content');
-
-    tabBtns.forEach(btn => {
-        btn.addEventListener('click', () => {
-            // Remove active class from all buttons and contents
-            tabBtns.forEach(b => b.classList.remove('active'));
-            tabContents.forEach(c => c.classList.remove('active'));
-
-            // Add active class to clicked button
-            btn.classList.add('active');
-
-            // Show corresponding content
-            const tabId = btn.getAttribute('data-tab');
-            const content = document.getElementById(tabId);
-            if (content) {
-                content.classList.add('active');
-
-                // Re-trigger animations in the new tab
-                const hiddenElements = content.querySelectorAll('.fade-in');
-                hiddenElements.forEach(el => {
-                    el.classList.remove('visible');
-                    observer.observe(el);
-                });
-            }
-        });
-    });
+    // 2. Tab Navigation (Removed - converted to anchor links)
 
     // 3. Smooth Scrolling for Navigation Links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
