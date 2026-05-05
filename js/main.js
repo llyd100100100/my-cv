@@ -37,38 +37,45 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // 4. Career Duration Calculation (Boryung + STGen)
-    const calculateExperience = () => {
-        // Boryung: 2020.10.01 ~ 2022.05.31
-        const boryungStart = new Date('2020-10-01');
-        const boryungEnd = new Date('2022-05-31');
-        const boryungDuration = boryungEnd - boryungStart;
+    // 4. Project Modal Logic
+    const projectCards = document.querySelectorAll('.project-card');
+    const modal = document.getElementById('project-modal');
+    const closeBtn = document.querySelector('.close-btn');
+    const modalTitle = document.getElementById('modal-title');
+    const modalSubtitle = document.getElementById('modal-subtitle');
+    const modalDesc = document.getElementById('modal-desc');
 
-        // STGen: 2023.01.01 ~ Present
-        const stgenStart = new Date('2023-01-01');
-        const stgenEnd = new Date(); // Present
-        const stgenDuration = stgenEnd - stgenStart;
+    if (modal && closeBtn) {
+        // Open modal
+        projectCards.forEach(card => {
+            card.addEventListener('click', () => {
+                const title = card.getAttribute('data-title');
+                const subtitle = card.getAttribute('data-subtitle');
+                const desc = card.getAttribute('data-desc');
 
-        // Total Duration
-        const totalDuration = boryungDuration + stgenDuration;
-        const totalYears = totalDuration / (1000 * 60 * 60 * 24 * 365.25);
+                if (title && desc) {
+                    modalTitle.textContent = title;
+                    modalSubtitle.textContent = subtitle || '';
+                    modalDesc.innerHTML = desc;
+                    
+                    modal.classList.add('show');
+                    document.body.style.overflow = 'hidden'; // Prevent background scrolling
+                }
+            });
+        });
 
-        const years = Math.floor(totalYears);
-        const months = Math.round((totalYears - years) * 12);
+        // Close modal (X button)
+        closeBtn.addEventListener('click', () => {
+            modal.classList.remove('show');
+            document.body.style.overflow = '';
+        });
 
-        // Update Hero Text
-        const expKo = document.getElementById('experience-ko');
-        const expEn = document.getElementById('experience-en');
-
-        if (expKo) expKo.textContent = `${years}년 ${months}개월`;
-        if (expEn) expEn.textContent = `${years} years ${months} months`;
-
-        // Update About Stats (Total Years)
-        const totalExpStat = document.getElementById('total-experience');
-        if (totalExpStat) {
-            totalExpStat.textContent = `${years}+`;
-        }
-    };
-
-    calculateExperience();
+        // Close modal (Click outside)
+        window.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.classList.remove('show');
+                document.body.style.overflow = '';
+            }
+        });
+    }
 });
