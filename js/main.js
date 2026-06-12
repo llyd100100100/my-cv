@@ -52,11 +52,23 @@ document.addEventListener('DOMContentLoaded', () => {
                 const title = card.getAttribute('data-title');
                 const subtitle = card.getAttribute('data-subtitle');
                 const desc = card.getAttribute('data-desc');
+                
+                const imgEl = card.querySelector('.project-image img');
+                const imgSrc = imgEl ? imgEl.getAttribute('src') : null;
+                const imgAlt = imgEl ? imgEl.getAttribute('alt') : '';
 
                 if (title && desc) {
                     modalTitle.textContent = title;
                     modalSubtitle.textContent = subtitle || '';
-                    modalDesc.innerHTML = desc;
+                    
+                    let finalHTML = '';
+                    if (imgSrc) {
+                        finalHTML += `<div class="modal-image-container" style="margin-bottom: 1.5rem; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.08);">
+                            <img src="${imgSrc}" alt="${imgAlt}" style="width: 100%; height: auto; max-height: 320px; object-fit: cover; display: block;">
+                        </div>`;
+                    }
+                    finalHTML += desc;
+                    modalDesc.innerHTML = finalHTML;
                     
                     modal.classList.add('show');
                     document.body.style.overflow = 'hidden'; // Prevent background scrolling
