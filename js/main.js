@@ -48,7 +48,11 @@ document.addEventListener('DOMContentLoaded', () => {
     if (modal && closeBtn) {
         // Open modal
         projectCards.forEach(card => {
-            card.addEventListener('click', () => {
+            card.addEventListener('click', (e) => {
+                // Prevent modal opening when clicking the direct link button
+                if (e.target.closest('.card-link-btn')) {
+                    return;
+                }
                 const title = card.getAttribute('data-title');
                 const subtitle = card.getAttribute('data-subtitle');
                 const desc = card.getAttribute('data-desc');
@@ -63,8 +67,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     
                     let finalHTML = '';
                     if (imgSrc) {
-                        finalHTML += `<div class="modal-image-container" style="margin-bottom: 1.5rem; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.08);">
-                            <img src="${imgSrc}" alt="${imgAlt}" style="width: 100%; height: auto; max-height: 320px; object-fit: cover; display: block;">
+                        finalHTML += `<div class="modal-image-container">
+                            <img src="${imgSrc}" alt="${imgAlt}" class="modal-project-img">
                         </div>`;
                     }
                     finalHTML += desc;
